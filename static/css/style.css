@@ -1,7 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  box-sizing: border-box;
+}
+/*
 .logo {
     height: auto;
     width: 200px;
-}
+}*/
 
 h1 {
     color: #04bbc9;
@@ -11,17 +25,80 @@ h1 {
    color: #04bbc9; 
 }
 
-/* nav */
-
-.logo{
-    height: auto;
-    width: 180px;
+.logo-container {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  float: initial;
 }
 
-#logo-lg {
-    margin: 0 3rem 0;
-    height: 70px;
+.logo-mobile {
+  height: 200px;
+  width: 100%;
 }
+
+.logo-desktop {
+    display: none;
+  }
+
+/* https://stackoverflow.com/questions/34984737/display-a-different-logo-on-mobile-and-desktop */
+@media (min-width: 768px) {
+  .logo-mobile {
+    display: none;
+  }
+  .logo-desktop {
+    display: block;
+    height: 200px;
+    width: 100%;
+    clear: both;
+  }
+}
+
+/* https://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/ */
+@media (min-width: 900px) {
+  .logo-desktop {
+    width: 900px;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+  }
+  .nav-container {
+    width: 900px;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+  }
+  .topnav {
+    position: relative;
+    top: 200px;
+  }
+  #myTopnav .icon {
+  display: none;
+}
+}
+  
+/* .nav-container {
+  position: relative;
+  width: 100%;
+  top: 200px;
+} */
+
+.topnav {
+    margin: auto;
+    width: 60%;
+  }
+  
+#myTopnav a {
+  float: left;
+  display: block;
+  background-color: #efe5e5;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+/* nav 
 
 #mainNav {
   padding-top: 1rem;
@@ -104,24 +181,16 @@ h1 {
 
 .nav-item a:hover{
     color: #d7af8e;
-}
+}*/
 
-/* home background image, code inspired from https://bootstrapmade.com/demo/Company/ */
+/* home background image */
 #home-img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	width: 100%;
-	min-height: 90vh;
-	background: url(../images/science.jpg) no-repeat center center;
-    background-size: cover;
+  height: 95vh;
+  background-image: url(../images/science.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  z-index: -1;
 }
 
 
