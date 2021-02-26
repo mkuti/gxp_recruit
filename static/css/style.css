@@ -41,63 +41,82 @@ h1 {
     display: none;
   }
 
-/* https://stackoverflow.com/questions/34984737/display-a-different-logo-on-mobile-and-desktop */
+.topnav {
+    margin: auto;
+    width: 60%;
+  }
+  
+  .topnav a {
+    float: left;
+    display: none;
+    background-color:seashell;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  
+  .topnav.responsive {
+    position: relative;
+  }
+  
+  .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+  /* media queries */
+
 @media (min-width: 768px) {
   .logo-mobile {
     display: none;
   }
   .logo-desktop {
     display: block;
+    position: absolute;
+    z-index: -1;
     height: 200px;
     width: 100%;
-    clear: both;
   }
 }
-
-/* https://css-tricks.com/snippets/css/absolute-center-vertical-horizontal-an-image/ */
 @media (min-width: 900px) {
-  .logo-desktop {
-    width: 900px;
-    position: absolute;
-    left: 50%;
-    margin-left: -450px;
+    .logo-desktop {
+      width: 900px;
+      position: absolute;
+      left: 50%;
+      margin-left: -450px;
+    }
+    .nav-container {
+      width: 900px;
+      position: absolute;
+      left: 50%;
+      margin-left: -450px;
+    }
+    .topnav {
+      position: relative;
+      top: 200px
+    }
+    #myTopnav a {
+      display: block;
+    }
+    #myTopnav .icon {
+    display: none;
   }
-  .nav-container {
-    width: 900px;
-    position: absolute;
-    left: 50%;
-    margin-left: -450px;
-  }
-  .topnav {
-    position: relative;
-    top: 200px;
-  }
-  #myTopnav .icon {
-  display: none;
 }
-}
-  
-/* .nav-container {
-  position: relative;
-  width: 100%;
-  top: 200px;
-} */
 
-.topnav {
-    margin: auto;
-    width: 60%;
-  }
-  
-#myTopnav a {
-  float: left;
-  display: block;
-  background-color: #efe5e5;
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  text-transform: uppercase;
-}
 /* nav 
 
 #mainNav {
@@ -190,7 +209,7 @@ h1 {
   background-size: cover;
   background-position: top;
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 
 
