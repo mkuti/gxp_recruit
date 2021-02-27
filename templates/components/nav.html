@@ -18,7 +18,7 @@
         </div>
     </div>
 </nav>-->
-
+<!--
 <header class="logo-container">
     <a href="home">
         <img class="logo-mobile" src="{% static 'images/logo-mobile.png' %}" alt="logo"/>
@@ -36,4 +36,26 @@
         </a>
     </div>
 </div>
+-->
+<div class="topnav" id="myTopnav">
+    <a class="logo" href="home">
+        <img class="logo-mobile" src="{% static 'images/logo-mobile.png' %}" alt="logo"/>
+        <img class="logo-desktop" src="{% static 'images/GxP-LinkedIn-Cover-Dark01.png' %}" alt="logo"/>
+    </a>
+    <div class="nav-container">
+        <div class="nav-items">
+            <a href="">Home</a>
+            <a href="">Current jobs</a>
+            <a href="">Our team</a>
+            <a href="">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+    <script src="{% static 'js/script.js' %}"></script>
 {% endblock %}

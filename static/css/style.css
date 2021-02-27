@@ -25,28 +25,18 @@ h1 {
    color: #04bbc9; 
 }
 
-.logo-container {
-  width: 100%;
-  text-align: center;
-  position: relative;
-  float: initial;
-}
-
 .logo-mobile {
   height: 200px;
   width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .logo-desktop {
     display: none;
   }
-
-.topnav {
-    margin: auto;
-    width: 60%;
-  }
   
-  .topnav a {
+.topnav a:not(.logo) {
     float: left;
     display: none;
     background-color:seashell;
@@ -55,11 +45,19 @@ h1 {
     text-decoration: none;
     font-size: 17px;
     text-transform: uppercase;
-  }
-  
-  .topnav a.icon {
+}
+
+.nav-items {
+  padding: 0;
+  margin: 0;
+}
+
+.topnav a.icon {
     float: right;
     display: block;
+    margin-right: 30px;
+    top: 50%;
+    margin-top: 70px;
   }
   
   .topnav.responsive {
@@ -104,15 +102,19 @@ h1 {
       position: absolute;
       left: 50%;
       margin-left: -450px;
+      top: 200px;
     }
-    .topnav {
+    .nav-items {
+      margin: auto;
+      width: 60%;
+    }
+    /*.topnav {
       position: relative;
-      top: 200px
-    }
+    }*/
     #myTopnav a {
       display: block;
     }
-    #myTopnav .icon {
+    #myTopnav a.icon {
     display: none;
   }
 }
