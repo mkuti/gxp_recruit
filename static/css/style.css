@@ -36,11 +36,7 @@ h1 {
     display: none;
   }
 
-.topnav {
-  overflow: hidden;
-}
-
-.topnav a:not(:first-child) {
+.topnav a:not(.logo) {
   float: left;
   display: none;
   background-color:seashell;
@@ -118,13 +114,13 @@ h1 {
     }
     /*.topnav {
       position: relative;
-    }
+    }*/
     #myTopnav a {
       display: block;
     }
     #myTopnav a.icon {
     display: none;
-  }*/
+  }
 }
 
 /* home background image */
