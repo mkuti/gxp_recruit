@@ -40,7 +40,7 @@ h1 {
   float: left;
   display: none;
   background-color:seashell;
-  color: black;
+  color: #111820;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -50,6 +50,11 @@ h1 {
 .nav-items {
   padding: 0;
   margin: 0;
+}
+
+.topnav a:not(.logo):hover {
+  background-color: #111820;
+  color: seashell;
 }
 
 .topnav a.icon {
