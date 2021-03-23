@@ -8,23 +8,34 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
   box-sizing: border-box;
-}
-/*
-.logo {
-    height: auto;
-    width: 200px;
-}*/
-
-h1 {
-    color: #04bbc9;
 }
 
 .bg-blue {
-   color: #04bbc9; 
+  background-color: #04bbc9; 
 }
 
+.bg-dark {
+  background-color: #111820;
+}
+
+.bg-light {
+  background-color: #F0DCCA;
+}
+
+.text-blue {
+  color: #04bbc9;
+}
+
+.text-dark {
+  color: #111820;
+}
+
+.light-text {
+  color: #F0DCCA;
+}
+
+/* logo */
 .logo-mobile {
   height: 200px;
   width: 100%;
@@ -36,10 +47,11 @@ h1 {
     display: none;
   }
 
+/* topnav */
 .topnav a:not(.logo) {
   float: left;
   display: none;
-  background-color:seashell;
+  background-color:#F0DCCA;
   color: #111820;
   padding: 14px 16px;
   text-decoration: none;
@@ -54,7 +66,7 @@ h1 {
 
 .topnav a:not(.logo):hover {
   background-color: #111820;
-  color: seashell;
+  color: #F0DCCA;
 }
 
 .topnav a.icon {
@@ -136,6 +148,23 @@ h1 {
   background-position: top;
   position: relative;
   z-index: -2;
+}
+
+.slogan {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  transform: translate(-40%, -20%);
+  text-align: center;
+}
+
+.slogan-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
 }
 
 /* footer */
