@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,500;0,600;0,700;1,500&display=swap');
 
 html {
   font-size: 62.5%;
@@ -99,53 +99,16 @@ body {
   position: static;
 }
 
-  /* media queries */
-
-@media (min-width: 768px) {
-  .logo-mobile {
-    display: none;
-  }
-  .logo-desktop {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    height: 200px;
-    width: 100%;
-  }
-}
-@media (min-width: 900px) {
-    .logo-desktop {
-      width: 900px;
-      position: absolute;
-      left: 50%;
-      margin-left: -450px;
-    }
-    .nav-container {
-      width: 900px;
-      position: absolute;
-      left: 50%;
-      margin-left: -450px;
-      top: 200px;
-    }
-    .nav-items {
-      margin: auto;
-      width: 60%;
-    }
-    /*.topnav {
-      position: relative;
-    }*/
-    #myTopnav a {
-      display: block;
-    }
-    #myTopnav a.icon {
-    display: none;
-  }
-}
-
 /* home background image */
 #home-img {
   height: 95vh;
-  background-image: url(../images/science.jpg);
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/science.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -156,16 +119,17 @@ body {
   width: 200px;
   height: auto;
   position: absolute;
-  top: 45%;
+  top: 70%;
   left: 60%;
-  transform: translate(-40%, -55%);
+  transform: translate(-40%, -30%);
   text-align: center;
 }
 
 .slogan-text {
   font-family: "Barlow", sans-serif;
   font-size: 3rem;
-  letter-spacing: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
 }
 
 /* footer */
@@ -206,4 +170,57 @@ body {
 .socialmedia i:before {
     display: inline-block;
     text-decoration: none;
+}
+
+
+/* media queries */
+
+@media (min-width: 370px) {
+  .slogan {
+    width: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-mobile {
+    display: none;
+  }
+  .logo-desktop {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 200px;
+    width: 100%;
+  }
+  .slogan {
+    width: 300px;
+  }
+}
+@media (min-width: 900px) {
+    .logo-desktop {
+      width: 900px;
+      position: absolute;
+      left: 50%;
+      margin-left: -450px;
+    }
+    .nav-container {
+      width: 900px;
+      position: absolute;
+      left: 50%;
+      margin-left: -450px;
+      top: 200px;
+    }
+    .nav-items {
+      margin: auto;
+      width: 60%;
+    }
+    /*.topnav {
+      position: relative;
+    }*/
+    #myTopnav a {
+      display: block;
+    }
+    #myTopnav a.icon {
+    display: none;
+  }
 }
