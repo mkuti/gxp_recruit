@@ -7,6 +7,7 @@ from pages.views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name="home"),
+    path('jobs/', include('jobs.urls')),
 ]
 
 # only add this in when in debug mode

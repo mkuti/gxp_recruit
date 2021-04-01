@@ -310,6 +310,7 @@ The following **must be installed** on your machine:
 
 # Credits
 1. General credits
+https://learndjango.com/tutorials/django-search-tutorial for inspiration on queryset and search feature.
 
 [Back to Top](#table-of-contents) 
 

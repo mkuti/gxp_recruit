@@ -132,6 +132,16 @@ body {
   letter-spacing: 0.2rem;
 }
 
+.job_search {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  transform: translate(-60%, -30%);
+  text-align: center;
+}
+
 /* footer */
 .footer-contact {
     -webkit-box-align: center;
