@@ -1,9 +1,16 @@
-from django.views.generic import TemplateView, ListView
 from django.shortcuts import render
 from .models import Job
-from .filters import JobFilter
+from .forms import SearchForm
 
 # Create your views here.
-class search_jobs(ListView):
-    model = Job
-    template_name = 'job_results.html'
+def job_results(request):
+    q = ''
+    results = []
+
+    if 'q' in request.GET:
+        form = SearchForm(request.GET)
+        if form.is_valid():
+            q = form.cleaned_data['q']
+            results = Job.objects.all()
+    
+    return render(request, 'job_results.html', {'form': form, 'q': q, 'results': results})

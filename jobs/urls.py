@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import search_jobs
+from .views import job_results
 
 urlpatterns = [
-    path('', search_jobs, name='search_jobs'),
+    path('', job_results, name='jobs'),
 ]

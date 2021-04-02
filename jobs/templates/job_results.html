@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+{% if q %}
+    {{ q }}
+{% else %}
+    <h3>There is currently no jobs with this name </h3>    
+{% endif %}
+
+{% endblock %}

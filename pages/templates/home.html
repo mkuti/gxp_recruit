@@ -7,18 +7,15 @@
     <div class="slogan">
         <h1 class="slogan-text light-text">Experts in recruiting for the Life Science industry.</h1>
     </div>
-    <div class="job_search">
-        <form action="{% url 'search_jobs' %}" method="get">
-            <input name="q" type="text" placeholder="Search...">
-            <div class="col-6 col-lg-12 text-left">
-                <h5 class="filter-header">Filter by Category</h5>
-                {{ filter.form.job_location|as_crispy_field }}
-            </div>
-        </form>
-    </div>
+    
 </section>      
 
 
-
+<section class="job_search">
+    <form action = "{% url 'jobs'%}" method="get">
+        {{ form.as_p }}
+        <input class="btn btn-lg bg-blue text-dark my-1" type="submit" value="Search">
+    </form>
+</section>
 
 {% endblock %}
