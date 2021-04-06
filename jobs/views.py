@@ -4,13 +4,9 @@ from .forms import SearchForm
 
 # Create your views here.
 def job_results(request):
-    q = ''
-    results = []
-
-    if 'q' in request.GET:
-        form = SearchForm(request.GET)
-        if form.is_valid():
-            q = form.cleaned_data['q']
-            results = Job.objects.all()
+    """
+    A view to show all jobs
+    """
+    jobs = Job.objects.filter(is_active=True)
     
-    return render(request, 'job_results.html', {'form': form, 'q': q, 'results': results})
+    return render(request, 'job_results.html', {'jobs': jobs})

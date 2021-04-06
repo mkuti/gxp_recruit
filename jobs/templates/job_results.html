@@ -1,12 +1,10 @@
-{% extends 'base.html'%}
+{% block job_results %}
 {% load static %}
 
-{% block content %}
-
-{% if q %}
-    {{ q }}
-{% else %}
-    <h3>There is currently no jobs with this name </h3>    
-{% endif %}
+    {% for job in jobs %}
+<section class="job_container">
+    <h1>{{job.title}}</h1>
+</section>
+    {% endfor %}
 
 {% endblock %}
