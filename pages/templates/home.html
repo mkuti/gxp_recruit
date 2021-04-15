@@ -1,5 +1,6 @@
 {% extends 'base.html'%}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block content %}
 
@@ -12,16 +13,22 @@
 
 
 <section class="job_search">
-    <form action = "{% url 'jobs'%}" method="get">
-        {{ form.as_p }}
-        <input class="btn btn-lg bg-blue text-dark my-1" type="submit" value="Search">
+    <form method="get">
+       <div class="text-left">
+           <h5 class="">Filter by Location</h5>
+           {{ filter.form.job_location|as_crispy_field }}
+       </div>
+       <div>
+           <button type="submit" class="btn btn-lg bg-blue text-dark my-1">Filter</button>
+        </div>
     </form>
 </section>
 
+{% for job in jobs %}
 <section class="all_jobs">
     <div class="jobs_container">
-        
+        <h3>{{ job.title}} </h3>
     </div>
 </section>
-
+{% endfor %}
 {% endblock %}
