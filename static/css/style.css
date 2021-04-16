@@ -116,12 +116,12 @@ body {
 }
 
 .slogan {
-  width: 200px;
+  width: 250px;
   height: auto;
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 60%;
-  transform: translate(-40%, -30%);
+  transform: translate(-40%, -50%);
   text-align: center;
 }
 
@@ -133,13 +133,17 @@ body {
 }
 
 .job_search {
-  width: 200px;
+  width: 150px;
   height: auto;
   position: absolute;
   top: 70%;
   left: 40%;
   transform: translate(-60%, -30%);
   text-align: center;
+}
+
+.all_jobs {
+  height: 50vh;
 }
 
 .jobs_container {
