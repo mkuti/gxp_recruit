@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,500;0,600;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,500;0,600;0,700;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400&family=Roboto:wght@100;300;400&display=swap');
 
 html {
   font-size: 62.5%;
@@ -7,7 +7,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   box-sizing: border-box;
@@ -39,7 +39,7 @@ body {
 
 /* logo */
 .logo-mobile {
-  height: 200px;
+  height: 2rem;
   width: 100%;
   position: absolute;
   z-index: -1;
@@ -55,9 +55,9 @@ body {
   display: none;
   background-color:#f9f9f9;
   color: #111820;
-  padding: 14px 16px;
+  padding: 1.4rem 1.6rem;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.7rem;
   text-transform: uppercase;
 }
 
@@ -74,9 +74,9 @@ body {
 .topnav a.icon {
   float: right;
   display: block;
-  margin-right: 30px;
+  margin-right: 3rem;
   top: 50%;
-  margin-top: 70px;
+  margin-top: 7rem;
   }
   
 .topnav.responsive {
@@ -116,7 +116,7 @@ body {
 }
 
 .slogan {
-  width: 250px;
+  width: 25rem;
   height: auto;
   position: absolute;
   top: 50%;
@@ -133,7 +133,7 @@ body {
 }
 
 .job_search {
-  width: 150px;
+  width: 15rem;
   height: auto;
   position: absolute;
   top: 70%;
@@ -147,11 +147,18 @@ body {
 }
 
 .jobs_container {
-  width: 200px;
+  font-family: "Poppins", sans-serif;
+  margin: 2rem;
+  padding: 1.5rem;
+  width: 30rem;
   height: auto;
-  border: #111820;
   background-color: #f9f9f9;
   color: #111820;
+  border:2px solid #111820;
+}
+
+.job_header{
+  font-weight: 700;
 }
 
 /* footer */

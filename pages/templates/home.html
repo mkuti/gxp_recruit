@@ -27,7 +27,10 @@
 {% for job in filter.qs %}
 <section class="all_jobs">
     <div class="jobs_container">
-        <h3>{{ job.title}}</h3>
+        <h3 class="job_header m-3">{{ job.title}}</h3>
+        <p class="job_description m-3">
+            {{ job.description }}
+        </p>
     </div>
 </section>
 {% endfor %}
