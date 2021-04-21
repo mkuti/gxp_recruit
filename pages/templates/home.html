@@ -26,11 +26,32 @@
 
 {% for job in filter.qs %}
 <section class="all_jobs">
-    <div class="jobs_container">
+    <div class="jobs_container text-dark">
         <h3 class="job_header m-3">{{ job.title}}</h3>
-        <p class="job_description m-3">
-            {{ job.description }}
-        </p>
+        <div class="job_specifics m-3">
+            <div class="description text-justify m-2">
+                <p>
+                    {{ job.description }}
+                </p>
+            </div>
+            <div class="location text-uppercase font-weight-bold m-3">
+                <i class="bi bi-geo-fill mr-4 t-2"></i>
+                <span>{{ job.job_location }}</span>
+            </div>
+            <div class="contract text-uppercase font-weight-bold m-3">
+                <i class="bi bi-calendar-check mr-4"></i>
+                <span>{{ job.job_contract }}</span>
+            </div>
+            <div class="schedule text-uppercase font-weight-bold m-3">
+                <i class="bi bi-clock-history mr-4"></i>
+                <span>{{ job.job_schedule }}</span>
+            </div>
+        </div>
+        
+        <div class="job_specifics m-3">
+            
+        </div>
+        
     </div>
 </section>
 {% endfor %}

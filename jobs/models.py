@@ -30,8 +30,8 @@ class Contract(models.Model):
 
     contracts = [
         ('Permanent', 'permanent'),
-        ('6Months', '6 months'),
-        ('1Year', '1 year'),
+        ('6 Months', '6 months'),
+        ('1 Year', '1 year'),
     ]
 
     name = models.CharField(max_length=15, choices=contracts, null=False)
@@ -49,7 +49,7 @@ class Schedule(models.Model):
     schedules = [
         ('Full Time', 'full time'),
         ('Part Time', 'part time'),
-        ('20Hours', '20 hours'),
+        ('20 Hours', '20 hours'),
     ]
 
     name = models.CharField(max_length=15, choices=schedules, null=False)
