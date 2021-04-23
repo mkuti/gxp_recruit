@@ -29,7 +29,7 @@ body {
   color: #04bbc9;
 }
 
-.text-dark {
+.dark-text {
   color: #111820;
 }
 
@@ -143,6 +143,7 @@ body {
 }
 
 .all_jobs {
+  margin-left: 2rem;
   height: 50vh;
 }
 
@@ -153,7 +154,6 @@ body {
   padding: 1.5rem;
   width: 30rem;
   height: auto;
-  background-color: #f9f9f9;
   border:0.3rem solid #111820;
   box-shadow: 10px 5px 5px #04bbc9;
   border-radius: 1rem;
@@ -166,6 +166,20 @@ body {
 
 .job_specifics {
   font-size: 1.5rem;
+}
+
+.popup_btn {
+  padding: 1rem;
+  box-shadow: 10px 5px 5px #111820;
+  font-size: 1.5rem;
+  border-radius: 5%;
+  border: 0.1rem solid #f9f9f9;;
+}
+
+.popup_btn:hover {
+  text-decoration: none;
+  background-color: #111820;
+  color: #04bbc9;
 }
 
 /* footer */

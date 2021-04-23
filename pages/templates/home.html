@@ -14,19 +14,19 @@
 
 <section class="job_search">
     <form method="get">
-       <div class="text-left">
+       <div class="text-left filters">
            <h5 class="">Filter by Location</h5>
            {{ filter.form.job_location|as_crispy_field }}
        </div>
        <div>
-           <button type="submit" class="btn btn-lg bg-blue text-dark my-1">Filter</button>
+           <button type="submit" class="btn btn-lg bg-blue dark-text my-1">Filter</button>
         </div>
     </form>
 </section>
 
 {% for job in filter.qs %}
 <section class="all_jobs">
-    <div class="jobs_container text-dark">
+    <div class="jobs_container dark-text">
         <h3 class="job_header m-3"><u>{{ job.title}}</u></h3>
         <div class="job_specifics m-3">
             <div class="description text-justify m-2">
@@ -35,7 +35,7 @@
                 </p>
             </div>
             <div class="location text-uppercase font-weight-bold m-3">
-                <i class="bi bi-geo-fill mr-4 t-2"></i>
+                <i class="bi bi-geo-fill mr-4"></i>
                 <span>{{ job.job_location }}</span>
             </div>
             <div class="contract text-uppercase font-weight-bold m-3">
@@ -47,9 +47,8 @@
                 <span>{{ job.job_schedule }}</span>
             </div>
         </div>
-        
-        <div class="job_specifics m-3">
-            
+        <div class="text-center m-5">
+            <a href="" class="popup_btn bg-blue dark-text text-uppercase">Find out More</a>
         </div>
         
     </div>
