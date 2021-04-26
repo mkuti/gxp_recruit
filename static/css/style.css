@@ -39,7 +39,7 @@ body {
 
 /* logo */
 .logo-mobile {
-  height: 2rem;
+  height: 20rem;
   width: 100%;
   position: absolute;
   z-index: -1;
@@ -140,6 +140,10 @@ body {
   left: 40%;
   transform: translate(-60%, -30%);
   text-align: center;
+}
+
+.filters {
+  padding: 3rem;
 }
 
 .all_jobs {
