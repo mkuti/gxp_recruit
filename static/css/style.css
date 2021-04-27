@@ -158,9 +158,17 @@ body {
   padding: 1.5rem;
   width: 20rem;
   height: auto;
+  border-radius: 1rem;
+}
+
+.white_box {
   border:0.3rem solid #111820;
   box-shadow: 10px 5px 5px #04bbc9;
-  border-radius: 1rem;
+}
+
+.dark_box {
+  border:0.3rem solid #f9f9f9;
+  box-shadow: 10px 5px 5px #04bbc9;
 }
 
 .job_header{
