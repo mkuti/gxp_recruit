@@ -1,4 +1,4 @@
-function myFunction() {
+function respNav() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
@@ -7,9 +7,10 @@ function myFunction() {
     }
   }
 
-$("#goToJobs").click(function(event) {
-  event.preventDefault();
+$(".scrollTo").on('click', function(e) {
+  e.preventDefault();
+  var target = $(this).attr('href');
   $('html, body').animate({
-      scrollTop: $("#jobs").offset().top
+    scrollTop: ($(target).offset().top)
   }, 2000);
 });
