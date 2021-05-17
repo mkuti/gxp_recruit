@@ -1,1 +1,1 @@
-web: gunicorn gxp.wsgi:application
+web: gunicorn gxp_recruit.wsgi:application
